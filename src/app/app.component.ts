@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fastApiFront';
+
+  constructor() {
+    this.init();
+  }
+
+  init(): void {
+
+  }
 }

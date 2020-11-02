@@ -1,1 +1,7 @@
 <p>login works!</p>
+
+<form [formGroup]="formG" (ngSubmit)="onLogin()">
+  Email: <input formControlName="email"  placeholder="Enter email">
+  Password: <input formControlName="password"  placeholder="Enter password">
+  <button type="submit" [disabled]="!formG.valid">Submit</button>
+</form>
